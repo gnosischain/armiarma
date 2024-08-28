@@ -45,13 +45,13 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
 
-      - name: Install
-        shell: bash
-        run: make install
-
       - name: Dependencies
         shell: bash
         run: make dependencies
+
+      - name: Install
+        shell: bash
+        run: make install
 
       - name: Build
         shell: bash
