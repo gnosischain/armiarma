@@ -47,6 +47,10 @@ jobs:
 
       - name: Dependencies
         shell: bash
+        run: make install
+
+      - name: Dependencies
+        shell: bash
         run: make dependencies
 
       - name: Build
