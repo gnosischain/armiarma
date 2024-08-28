@@ -29,7 +29,7 @@ jobs:
         run: |
           org_name=$(echo "${{ github.repository_owner }}")
           echo "Organization Name: $org_name"
-          echo "::set-output name=org_name::$org_name"
+          echo "org_name=$org_name" >> $GITHUB_OUTPUT
 
       - name: Extract commit
         id: commit
@@ -64,8 +64,8 @@ jobs:
           docker build . --tag ghcr.io/${{ steps.org_name.outputs.org_name }}/armiarma:latest
           docker push ghcr.io/${{ steps.org_name.outputs.org_name }}/armiarma:latest
 
-    #   - name: Push Versioned
-    #     run: |
-    #       docker build . --tag ghcr.io/${{ github.actor }}/armiarma:${{ steps.commit.outputs.short }}
-    #       docker push ghcr.io/${{ github.actor }}/armiarma:${{ steps.commit.outputs.short }}
+      - name: Push Versioned
+        run: |
+          docker build . --tag ghcr.io/${{ steps.org_name.outputs.org_name }}/armiarma:${{ steps.commit.outputs.short }}
+          docker push ghcr.io/${{ steps.org_name.outputs.org_name }}/armiarma:${{ steps.commit.outputs.short }}
             
