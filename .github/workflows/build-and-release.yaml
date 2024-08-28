@@ -14,7 +14,6 @@ jobs:
 
     strategy:
       matrix:
-        go-version: [1.23.x]
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
@@ -41,11 +40,6 @@ jobs:
           registry: ghcr.io
           username: ${{ steps.org_name.outputs.org_name }}
           password: ${{ secrets.GITHUB_TOKEN }}
-    
-      - name: Install Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: ${{ matrix.go-version }}
 
       - name: Push Latest
         run: |
