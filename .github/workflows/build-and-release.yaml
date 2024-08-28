@@ -35,14 +35,12 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build
-        uses: hashicorp/actions-go-build@main
+    
+      - name: Install Go
+        uses: actions/setup-go@v5
         with:
-          go_version: 1.18
-          os: linux
-          arch: amd64
-          work_dir: pkg
-          debug: true
-          instructions: |
-            go build -o "$BIN_PATH" -trimpath -buildvcs=false
+          go-version: ${{ matrix.go-version }}
+          
+      - name: Build
+        shell: bash
+        run: make build
