@@ -1,0 +1,48 @@
+name: Build & Release GC armiarma scraper
+
+on:
+    push:
+      branches:
+        - ci
+
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        go-version: [1.17.x]
+        os: [ubuntu-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
+      - name: Extract commit
+        id: commit
+        uses: prompt/actions-commit-hash@v3
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3.3.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build
+        uses: hashicorp/actions-go-build@main
+        with:
+          go_version: 1.18
+          os: linux
+          arch: amd64
+          work_dir: pkg
+          debug: true
+          instructions: |
+            go build -o "$BIN_PATH" -trimpath -buildvcs=false
