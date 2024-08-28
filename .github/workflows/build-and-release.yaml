@@ -56,3 +56,14 @@ jobs:
       - name: Build
         shell: bash
         run: make build
+
+      - name: Push Latest
+        run: |
+          docker build . --tag ghcr.io/${{ github.actor }}/armiarma:latest
+          docker push ghcr.io/${{ github.actor }}/armiarma:latest
+
+      - name: Push Versioned
+        run: |
+          docker build . --tag ghcr.io/${{ github.actor }}/armiarma:${{ steps.commit.outputs.short }}
+          docker push ghcr.io/${{ github.actor }}/armiarma:${{ steps.commit.outputs.short }}
+            
