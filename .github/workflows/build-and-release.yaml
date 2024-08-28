@@ -47,18 +47,6 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
 
-      - name: Dependencies
-        shell: bash
-        run: make dependencies
-
-      - name: Install
-        shell: bash
-        run: make install
-
-      - name: Build
-        shell: bash
-        run: make build
-
       - name: Push Latest
         run: |
           docker build . --tag ghcr.io/${{ steps.org_name.outputs.org_name }}/armiarma:latest
