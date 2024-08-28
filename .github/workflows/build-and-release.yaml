@@ -45,7 +45,7 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
 
-      - name: Dependencies
+      - name: Install
         shell: bash
         run: make install
 
