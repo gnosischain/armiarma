@@ -16,3 +16,5 @@ app-data/*_db
 
 # IDE configuration
 .idea
+
+vendor
