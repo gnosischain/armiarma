@@ -8,7 +8,6 @@ require (
 	github.com/jackc/pgx/v4 v4.18.3
 	github.com/lib/pq v1.10.4
 	github.com/libp2p/go-libp2p v0.33.1
-	github.com/libp2p/go-libp2p-core v0.16.1
 	github.com/libp2p/go-libp2p-kad-dht v0.15.0
 	github.com/libp2p/go-libp2p-kbucket v0.4.7
 	github.com/libp2p/go-libp2p-mplex v0.9.0
@@ -88,6 +87,7 @@ require (
 	github.com/libp2p/go-eventbus v0.3.0 // indirect
 	github.com/libp2p/go-flow-metrics v0.1.0 // indirect
 	github.com/libp2p/go-libp2p-asn-util v0.4.1 // indirect
+	github.com/libp2p/go-libp2p-core v0.16.1 // indirect
 	github.com/libp2p/go-libp2p-peerstore v0.8.0 // indirect
 	github.com/libp2p/go-libp2p-record v0.1.3 // indirect
 	github.com/libp2p/go-libp2p-swarm v0.11.0 // indirect
