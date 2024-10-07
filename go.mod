@@ -1,4 +1,4 @@
-module github.com/migalabs/armiarma
+module github.com/gnosischain/armiarma
 
 go 1.21
 
