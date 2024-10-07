@@ -1,7 +1,7 @@
 package discovery
 
 import (
-	"github.com/migalabs/armiarma/pkg/metrics"
+	"github.com/gnosischain/armiarma/pkg/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

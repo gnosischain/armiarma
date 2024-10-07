@@ -16,9 +16,9 @@ import (
 	"github.com/pkg/errors"
 
 	net "github.com/libp2p/go-libp2p/core/network"
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/discovery"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/discovery"
+	"github.com/gnosischain/armiarma/pkg/utils"
 
 	kdht "github.com/libp2p/go-libp2p-kad-dht"
 	pb "github.com/libp2p/go-libp2p-kad-dht/pb"

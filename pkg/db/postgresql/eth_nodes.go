@@ -3,7 +3,7 @@ package postgresql
 import (
 	"github.com/pkg/errors"
 
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -18,10 +18,10 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/discovery"
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/discovery"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
+	"github.com/gnosischain/armiarma/pkg/utils"
 
 	gethlog "github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/p2p/discover"

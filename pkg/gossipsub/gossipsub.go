@@ -20,7 +20,7 @@ import (
 	pubsub_pb "github.com/libp2p/go-libp2p-pubsub/pb"
 	"github.com/libp2p/go-libp2p/core/host"
 
-	"github.com/migalabs/armiarma/pkg/metrics"
+	"github.com/gnosischain/armiarma/pkg/metrics"
 )
 
 type database interface {

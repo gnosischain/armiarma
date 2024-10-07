@@ -1,8 +1,8 @@
 package peering
 
 import (
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/hosts"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/hosts"
 )
 
 // Strategy is the common interface the any desired Peering Strategy should follow

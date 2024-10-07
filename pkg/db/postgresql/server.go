@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/gossipsub"
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/gossipsub"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	log "github.com/sirupsen/logrus"
 
 	"github.com/jackc/pgx/v4/pgxpool"

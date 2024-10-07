@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/migalabs/armiarma/pkg/utils"
-	"github.com/migalabs/armiarma/pkg/utils/apis"
+	"github.com/gnosischain/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils/apis"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 )

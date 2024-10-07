@@ -8,7 +8,7 @@ import (
 
 	// bls "github.com/phoreproject/github.com/bls/g1pubs"
 
-	"github.com/migalabs/armiarma/pkg/gossipsub"
+	"github.com/gnosischain/armiarma/pkg/gossipsub"
 	"github.com/protolambda/zrnt/eth2/beacon/common"
 	"github.com/protolambda/zrnt/eth2/beacon/deneb"
 	"github.com/protolambda/zrnt/eth2/configs"

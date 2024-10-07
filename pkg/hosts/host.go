@@ -20,9 +20,9 @@ import (
 
 	ma "github.com/multiformats/go-multiaddr"
 
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/utils"
-	"github.com/migalabs/armiarma/pkg/utils/apis"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils/apis"
 
 	"github.com/pkg/errors"
 )

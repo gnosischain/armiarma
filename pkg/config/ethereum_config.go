@@ -3,9 +3,9 @@ package config
 import (
 	"strconv"
 
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
-	rendp "github.com/migalabs/armiarma/pkg/networks/ethereum/remoteendpoint"
-	"github.com/migalabs/armiarma/pkg/utils"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
+	rendp "github.com/gnosischain/armiarma/pkg/networks/ethereum/remoteendpoint"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	"github.com/pkg/errors"
 
 	log "github.com/sirupsen/logrus"

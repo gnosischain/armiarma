@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	"github.com/pkg/errors"
 
 	gcrypto "github.com/ethereum/go-ethereum/crypto"

@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/migalabs/armiarma/pkg/hosts"
+	"github.com/gnosischain/armiarma/pkg/hosts"
 	log "github.com/sirupsen/logrus"
 )
 

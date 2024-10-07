@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/migalabs/armiarma/pkg/networks/ethereum/rpc/methods"
-	"github.com/migalabs/armiarma/pkg/networks/ethereum/rpc/reqresp"
+	"github.com/gnosischain/armiarma/pkg/networks/ethereum/rpc/methods"
+	"github.com/gnosischain/armiarma/pkg/networks/ethereum/rpc/reqresp"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 

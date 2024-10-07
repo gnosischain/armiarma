@@ -1,7 +1,7 @@
 package peering
 
 import (
-	"github.com/migalabs/armiarma/pkg/metrics"
+	"github.com/gnosischain/armiarma/pkg/metrics"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"

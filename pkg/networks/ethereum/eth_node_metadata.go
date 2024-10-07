@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	"github.com/pkg/errors"
 	"github.com/protolambda/zrnt/eth2/beacon/common"
 )

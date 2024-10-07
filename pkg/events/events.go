@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/migalabs/armiarma/pkg/hosts"
-	"github.com/migalabs/armiarma/pkg/networks/ethereum"
+	"github.com/gnosischain/armiarma/pkg/hosts"
+	"github.com/gnosischain/armiarma/pkg/networks/ethereum"
 	"github.com/r3labs/sse/v2"
 	log "github.com/sirupsen/logrus"
 )

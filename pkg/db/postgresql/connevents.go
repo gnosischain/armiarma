@@ -1,7 +1,7 @@
 package postgresql
 
 import (
-	"github.com/migalabs/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/db/models"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 )

@@ -12,9 +12,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	cli "github.com/urfave/cli/v2"
 
-	"github.com/migalabs/armiarma/pkg/config"
-	"github.com/migalabs/armiarma/pkg/crawler"
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
+	"github.com/gnosischain/armiarma/pkg/config"
+	"github.com/gnosischain/armiarma/pkg/crawler"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
 )
 
 // CrawlCommand contains the crawl sub-command configuration.

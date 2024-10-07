@@ -31,7 +31,7 @@ To run the tool from the source code, follow these steps:
 
 ```
 # Donwload the git repository of the tool
-git clone https://github.com/migalabs/armiarma.git && cd armiarma
+git clone https://github.com/gnosischain/armiarma.git && cd armiarma
 
 # Compile the tool generating the armiarma binary
 make dependencies

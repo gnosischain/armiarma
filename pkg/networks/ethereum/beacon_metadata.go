@@ -7,8 +7,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/migalabs/armiarma/pkg/networks/ethereum/rpc/methods"
-	"github.com/migalabs/armiarma/pkg/networks/ethereum/rpc/reqresp"
+	"github.com/gnosischain/armiarma/pkg/networks/ethereum/rpc/methods"
+	"github.com/gnosischain/armiarma/pkg/networks/ethereum/rpc/reqresp"
 
 	log "github.com/sirupsen/logrus"
 

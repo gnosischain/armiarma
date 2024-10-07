@@ -5,8 +5,8 @@ import (
 
 	pgx "github.com/jackc/pgx/v4"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/migalabs/armiarma/pkg/db/models"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"

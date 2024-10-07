@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/migalabs/armiarma/pkg/db/models"
-	psql "github.com/migalabs/armiarma/pkg/db/postgresql"
-	"github.com/migalabs/armiarma/pkg/hosts"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	psql "github.com/gnosischain/armiarma/pkg/db/postgresql"
+	"github.com/gnosischain/armiarma/pkg/hosts"
 	log "github.com/sirupsen/logrus"
 )
 

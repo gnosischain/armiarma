@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/p2p/enr"
 	"github.com/protolambda/zrnt/eth2/beacon/common"
 
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

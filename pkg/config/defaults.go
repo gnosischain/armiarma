@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/utils"
 
 	"github.com/pkg/errors"
 )

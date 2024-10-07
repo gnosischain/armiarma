@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/migalabs/armiarma/pkg/db/models"
-	psql "github.com/migalabs/armiarma/pkg/db/postgresql"
-	"github.com/migalabs/armiarma/pkg/hosts"
-	"github.com/migalabs/armiarma/pkg/utils"
+	"github.com/gnosischain/armiarma/pkg/db/models"
+	psql "github.com/gnosischain/armiarma/pkg/db/postgresql"
+	"github.com/gnosischain/armiarma/pkg/hosts"
+	"github.com/gnosischain/armiarma/pkg/utils"
 
 	"github.com/pkg/errors"
 

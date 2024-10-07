@@ -3,7 +3,7 @@ package postgresql
 import (
 	log "github.com/sirupsen/logrus"
 
-	eth "github.com/migalabs/armiarma/pkg/networks/ethereum"
+	eth "github.com/gnosischain/armiarma/pkg/networks/ethereum"
 )
 
 func (d *DBClient) DropEthereumNodeStatus() error {
