@@ -1,15 +1,12 @@
-# syntax=docker/dockerfile:1
-
-# chosen buster image for
 FROM golang:1.22-alpine AS builder
 
-WORKDIR /
-RUN apk add --no-cache git
-RUN apk add --no-cache make
-COPY ./ /armiarma
-
-#RUN make dependencies
 WORKDIR /armiarma
+RUN apk add --no-cache git make
+
+# Clone the repository and initialize submodules
+RUN git clone --recursive https://github.com/gnosischain/armiarma.git .
+RUN git submodule update --init --recursive
+
 RUN make dependencies
 RUN make build
 
@@ -23,5 +20,5 @@ COPY --from=builder /armiarma/build/ /crawler
 EXPOSE 9020 
 # Crawler exposed Port for Prometheus data export
 EXPOSE 9080
-# Arguments coming from the docker call: (1)->armiarma-client (2)->flags
+
 ENTRYPOINT ["/crawler/armiarma"]
