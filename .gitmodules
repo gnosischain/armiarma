@@ -1,3 +1,4 @@
 [submodule "go-libp2p-pubsub"]
-	path = go-libp2p-pubsub
-	url = https://github.com/cortze/go-libp2p-pubsub
+    path = go-libp2p-pubsub
+    url = https://github.com/cortze/go-libp2p-pubsub.git
+    branch = armiarma-v2
