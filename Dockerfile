@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # chosen buster image for
-FROM golang:1.21-alpine AS builder
+FROM golang:1.22-alpine AS builder
 
 WORKDIR /
 RUN apk add --no-cache git
